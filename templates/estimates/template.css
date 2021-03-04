@@ -1,0 +1,70 @@
+#estimate:not(.edit-mode) .estimate,
+body > .estimate {
+  padding: 1cm;
+}
+
+#customer {
+  padding-top: 0 !important;
+}
+
+#estimate:not(.edit-mode) #brief-description,
+body > #brief-description {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#estimate:not(.edit-mode) #items-table,
+body > .estimate #items-table {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#estimate:not(.edit-mode) #items-header th.action,
+#estimate:not(.edit-mode) #items-body td.action,
+body > .estimate #items-header th.action,
+body > .estimate #items-body td.action {
+  display: none;
+}
+
+#estimate:not(.edit-mode) #items-header th,
+body > .estimate #items-header th {
+  text-align: center !important;
+}
+
+#estimate:not(.edit-mode) #items-body .price-unit,
+#estimate:not(.edit-mode) #items-body .quantity,
+#estimate:not(.edit-mode) #items-body .price,
+body > .estimate #items-body .price-unit,
+body > .estimate #items-body .quantity,
+body > .estimate #items-body .price {
+  text-align: center !important;
+}
+
+#estimate:not(.edit-mode) #items-body .item,
+body > .estimate #items-body .item {
+  min-width: 4cm;
+}
+
+#estimate:not(.edit-mode) #items-body .description .content,
+body > .estimate #items-body .description .content {
+  max-width: none !important;
+  font-size: 0.75rem;
+}
+
+#estimate:not(.edit-mode) #footer,
+body > .estimate #footer {
+  padding-top: 0.5rem !important;
+  font-size: 0.6875rem;
+}
+
+#estimate:not(.edit-mode) #footer > p:nth-child(1n),
+body > .estimate #footer > p:nth-child(1n) {
+  margin-top: 0.5rem;
+}
+
+#estimate:not(.edit-mode) #footer > p:nth-child(2n),
+body > .estimate #footer > p:nth-child(2n) {
+  display: none;
+}
