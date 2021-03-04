@@ -7,8 +7,12 @@ body > .estimate {
   padding-top: 0 !important;
 }
 
+#invoice-title {
+  padding-top: 1.5rem !important;
+}
+
 #estimate:not(.edit-mode) #brief-description,
-body > #brief-description {
+body > .estimate #brief-description {
   margin-top: 1rem;
   text-align: center;
   font-weight: bold;
@@ -44,7 +48,8 @@ body > .estimate #items-body .price {
 
 #estimate:not(.edit-mode) #items-body .item,
 body > .estimate #items-body .item {
-  min-width: 4cm;
+  font-size: 0.75rem;
+  font-weight: bold
 }
 
 #estimate:not(.edit-mode) #items-body .description .content,
@@ -56,7 +61,7 @@ body > .estimate #items-body .description .content {
 #estimate:not(.edit-mode) #footer,
 body > .estimate #footer {
   padding-top: 0.5rem !important;
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
 }
 
 #estimate:not(.edit-mode) #footer > p:nth-child(1n),
@@ -67,4 +72,27 @@ body > .estimate #footer > p:nth-child(1n) {
 #estimate:not(.edit-mode) #footer > p:nth-child(2n),
 body > .estimate #footer > p:nth-child(2n) {
   display: none;
+}
+
+#estimate:not(.edit-mode) #footer > p:nth-child(1),
+body > .estimate #footer > p:nth-child(1) {
+  margin-top: 0;
+  text-align: right;
+}
+
+#estimate:not(.edit-mode) #footer ul,
+body > .estimate #footer ul {
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+#signatures {
+  margin-top: -1rem;
+  overflow-y: hidden;
+  font-weight: bold;
+}
+
+#signatures > p {
+  width: 50%;
+  text-align: center;
 }
