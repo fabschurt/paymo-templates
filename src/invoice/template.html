@@ -1,0 +1,94 @@
+<div class="invoice">
+  <div id="company-info" class="left">
+    <div class="title">Fournisseur</div>
+    {company_info}
+  </div>
+  <div class="right">
+    <div id="customer" class="title">
+      <div>Client</div>
+      <!-- {CUSTOMER} ( DO NOT EDIT THIS LINE )-->
+    </div>
+    <div id="bill-to">{bill_to}</div>
+    <div id="single-settings">
+      <!-- {CUSTOM_FIELDS_START} ( DO NOT EDIT THIS LINE )-->
+      <table>
+        <thead>
+          <tr>
+            <th id="invoice-number-label" class="label">N° de facture</th>
+            <th id="invoice-number-value" class="value">{number}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="date-row">
+            <td id="date-label" class="label">Date</td>
+            <td id="date-value" class="value">{date}</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- {CUSTOM_FIELDS_END} ( DO NOT EDIT THIS LINE )-->
+    </div>
+  </div>
+  <!-- {EXPENSE_BUTTON_WRAPPER} ( DO NOT EDIT THIS LINE )-->
+  <div id="invoice-title" class="clear">{title}</div>
+  <div id="items">
+    <table id="items-table">
+      <thead id="items-header">
+        <tr>
+          <!-- {HEADER_ACF} ( DO NOT EDIT THIS LINE )-->
+          <th class="item">Libellé</th>
+          <th class="description">Détail</th>
+          <th class="price-unit">P.U.</th>
+          <th class="quantity">Qté</th>
+          <th class="price">Prix</th>
+          <!-- {HEADER_ACL} ( DO NOT EDIT THIS LINE )-->
+        </tr>
+      </thead>
+      <tbody id="items-body">
+        <!-- {INVOICE_ROWS_START} ( DO NOT EDIT THIS LINE )-->
+        <tr class="item-row" id="{row_id}">
+          <!-- {ROW_ACF} ( DO NOT EDIT THIS LINE )-->
+          <td class="item" >{item}</td>
+          <td class="description">{description}</td>
+          <td class="price-unit">{price_unit}</td>
+          <td class="quantity">{quantity}</td>
+          <td class="price">{price}</td>
+          <!-- {ROW_ACL} (DO NOT EDIT THIS LINE)-->
+        </tr>
+        <!-- {INVOICE_ROWS_END} ( DO NOT EDIT THIS LINE )-->
+      </tbody>
+    </table>
+  </div>
+  <div class="section">
+    <div id="totals" class="right">
+      <table>
+        <tbody>
+          <tr {check_subtotal_hide}>
+            <td class="label" id="subtotal-label">Sous-total</td>
+            <td class="value right-align" id="subtotal">{subtotal}</td>
+          </tr>
+          <tr {check_discount_hide}>
+            <td id="discount-value-label" class="label"><span id="discount-text">{discount_text}</span><span id="discount-percent-value">{discount}</span></td>
+            <td class="value right-align" id="discount-value">-{discount_value}</td>
+          </tr>
+          <tr {check_tax_hide}>
+            <td id="tax-value-label" class="label"><span id="tax-text">{tax_text}</span><span id="tax-percent-value">{tax}</span></td>
+            <td class="value right-align" id="tax-value">{tax_value}</td>
+          </tr>
+          <tr {check_tax2_hide}>
+            <td id="tax2-value-label" class="label"><span id="tax2-text">{tax2_text}</span><span id="tax-percent-value">{tax2}</span></td>
+            <td class="value right-align" id="tax2-value">{tax2_value}</td>
+          </tr>
+          <tr class="highlighted">
+            <td id="total-label" class="label">Total à régler</td>
+            <td class="value right-align" id="total">{total}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- {BUTTONS_WRAPPER} ( DO NOT EDIT THIS LINE )-->
+  </div>
+  <div id="footer" class="clear">{footer}</div>
+  <div id="signature">
+    <p>Signature du fournisseur :</p>
+  </div>
+</div>

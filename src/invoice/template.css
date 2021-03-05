@@ -1,0 +1,83 @@
+#invoice:not(.edit-mode) .invoice,
+body > .invoice {
+  padding: 1cm;
+}
+
+#customer {
+  padding-top: 0 !important;
+}
+
+#invoice:not(.edit-mode) #items-table,
+body > .invoice #items-table {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#invoice:not(.edit-mode) #items-header th.action,
+#invoice:not(.edit-mode) #items-body td.action,
+body > .invoice #items-header th.action,
+body > .invoice #items-body td.action {
+  display: none;
+}
+
+#invoice:not(.edit-mode) #items-header th,
+body > .invoice #items-header th {
+  text-align: center !important;
+}
+
+#invoice:not(.edit-mode) #items-body .price-unit,
+#invoice:not(.edit-mode) #items-body .quantity,
+#invoice:not(.edit-mode) #items-body .price,
+body > .invoice #items-body .price-unit,
+body > .invoice #items-body .quantity,
+body > .invoice #items-body .price {
+  text-align: center !important;
+}
+
+#invoice:not(.edit-mode) #items-body .item,
+body > .invoice #items-body .item {
+  min-width: 10cm;
+  font-size: 0.75rem;
+  font-weight: bold
+}
+
+#invoice:not(.edit-mode) #items-body .description .content,
+body > .invoice #items-body .description .content {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+#invoice:not(.edit-mode) #footer,
+body > .invoice #footer {
+  padding-top: 0.5rem !important;
+  font-size: 0.75rem;
+}
+
+#invoice:not(.edit-mode) #footer > p:nth-child(1n),
+body > .invoice #footer > p:nth-child(1n) {
+  margin-top: 0.5rem;
+}
+
+#invoice:not(.edit-mode) #footer > p:nth-child(2n),
+body > .invoice #footer > p:nth-child(2n) {
+  display: none;
+}
+
+#invoice:not(.edit-mode) #footer > p:nth-child(1),
+body > .invoice #footer > p:nth-child(1) {
+  margin: 0 0 0.5rem;
+  text-align: right;
+}
+
+#invoice:not(.edit-mode) #footer ul,
+body > .invoice #footer ul {
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+#signature {
+  margin-top: -0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
